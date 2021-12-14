@@ -1,0 +1,82 @@
+.project-card{
+    position: relative;
+    width: 550px;
+}
+.project-icon{
+    background-color: #eee5ff;
+    color: #212529;
+    width:4rem;
+    height:4rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.badge{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bg-project{
+    color: #ffc107;
+    background-color: rgba(219, 173, 34, 0.2);
+}
+
+.bg-stopped{
+    background-color: rgba(236, 85, 82, 0.2);
+    color: #ec5552;
+}
+
+.bg-completed{
+    color: #50d294;
+    background-color: rgba(80, 210, 148, 0.2);
+}
+
+.card-text{
+    font-size:15px;
+}
+
+.project-date-list{
+    padding:0;
+}
+
+.project-date-list li{
+    font-size:15px;
+}
+
+.progress{
+    height:8px;
+}
+
+.progress-bar{
+    background-color: #ffc107;
+}
+
+.progress-bar-stopped{
+    background-color: #ec5552;
+}
+
+.progress-bar-completed{
+    background-color: #28a745;
+}
+
+.days-left{
+    font-size: 13px;
+    font-weight: 700;
+    margin-top:auto;
+    margin-bottom: auto;
+    color: #ffc107;
+    background-color: rgba(219, 173, 34, 0.2);
+}
+
+.days-left-stopped{
+    background-color: rgba(236, 85, 82, 0.2);
+    color: #ec5552;
+}
+
+.days-left-completed{
+    color: #50d294;
+    background-color: rgba(80, 210, 148, 0.2);
+}

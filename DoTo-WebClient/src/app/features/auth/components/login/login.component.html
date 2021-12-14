@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-center shadow-sm" style="height:100vh;">
+    <div class="d-flex justify-content-center mt-5 authContainer" >
+        <form class="w-100" [formGroup]="loginGroup" (submit)="login()">
+            <div class="mb-1 pt-3 pb-3 authFormHeader">
+                <h4 class="text-center mb-0" style="font-style:italic;font-weight:700;">DoTo</h4>
+            </div>
+            <div class="authFormBody">
+                <div class="mb-3">
+                    <label for="emailLogin" class="form-label">Email Address :</label>
+                    <input type="email" class="form-control" id="emailLogin" formControlName="loginEmail">
+                </div>
+                <div class="mb-3">
+                    <label for="passwordLogin" class="form-label">Password :</label>
+                    <input type="password" class="form-control" id="passwordLogin" formControlName="loginPassword">
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex flex-row align-items-center justify-content-between">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" formControlName="loginRemember">
+                          <label class="form-check-label" for="flexCheckDefault" >
+                            Remember me 
+                          </label>
+                        </div>
+                        <a class="link-secondary" style="text-decoration:none;font-size:14px;" >Forgot your password? </a>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-dark w-100 mb-2 mt-3 authBtn">Sign In</button>
+                <div class="mt-3 d-flex justify-content-center">
+                    <a class="link-secondary" style="text-decoration:none;font-size:14px;" (click)='goToRegister()'>
+                    Don't have an account? Create one here.</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

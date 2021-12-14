@@ -1,0 +1,109 @@
+<p> </p>
+<div class="d-flex flex-row justify-content-evenly mb-3">
+    <!--Completed project-->
+    <div class="card project-card">
+        <div class="shadow-sm d-flex align-items-center justify-content-center project-icon">
+            <fa-icon [icon]="faPalette"></fa-icon>
+        </div>
+        <div class="card-body ">
+            <div class="project-header mb-2 d-flex flex-row justify-content-between">
+                <h5 class="card-title fw-bold">Project Title</h5>
+                <span class="badge bg-project bg-completed">Completed</span>
+            </div>
+            <span class="card-text fw-bolder">Description</span>
+            <p class="card-text">loremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsum</p>
+            <ul class="project-date-list d-flex flex-row">
+                <li class="d-flex flex-column me-4">
+                    <span class="fw-bolder">Start Date:</span>
+                    <span>1-11-2021</span>
+                </li>
+                <li class="d-flex flex-column">
+                    <span class="fw-bolder">End Date:</span>
+                    <span>2-09-2022</span>
+                </li>
+            </ul>
+            <hr>
+            <div class="d-flex flex-row justify-content-between mb-3">
+                <p class="card-text fw-bolder mb-0">Progress: 100%</p>
+                <p class="days-left days-left-completed badge mb-0"> 
+                    <fa-icon [icon]="faFlag"></fa-icon> <span class="ms-2">Completed in 25 days</span>
+                </p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-completed" style="width:100%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <!--In progress project-->
+    <div class="card project-card">
+        <div class="shadow-sm d-flex align-items-center justify-content-center project-icon" style="background-color: #a8d7e0;">
+            <fa-icon [icon]="faMobileAlt"></fa-icon>
+        </div>
+        <div class="card-body ">
+            <div class="project-header mb-2 d-flex flex-row justify-content-between">
+                <h5 class="card-title fw-bold">Project Title</h5>
+                <span class="badge bg-project">In progress</span>
+            </div>
+            <span class="card-text fw-bolder">Description</span>
+            <p class="card-text">loremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsum</p>
+            <ul class="project-date-list d-flex flex-row">
+                <li class="d-flex flex-column me-4">
+                    <span class="fw-bolder">Start Date:</span>
+                    <span>1-11-2021</span>
+                </li>
+                <li class="d-flex flex-column">
+                    <span class="fw-bolder">End Date:</span>
+                    <span>2-09-2022</span>
+                </li>
+            </ul>
+            <hr>
+            <div class="d-flex flex-row justify-content-between mb-3">
+                <p class="card-text fw-bolder mb-0">Progress: 57%</p>
+                <p class="days-left badge mb-0"> 
+                    <fa-icon [icon]="faClock"></fa-icon>
+                    <span class="ms-2">25 days left</span>
+                </p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar " style="width:57%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+<!--Stopped Project-->
+    <div class="card project-card">
+        <div class="shadow-sm d-flex align-items-center justify-content-center project-icon" style="background-color:#ffe28c;">
+            <fa-icon [icon]="faTerminal"></fa-icon>
+        </div>
+        <div class="card-body ">
+            <div class="project-header mb-2 d-flex flex-row justify-content-between">
+                <h5 class="card-title fw-bold">Project Title</h5>
+                <span class="badge bg-project bg-stopped">Stopped</span>
+            </div>
+            <span class="card-text fw-bolder">Description</span>
+            <p class="card-text">loremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsum</p>
+            <ul class="project-date-list d-flex flex-row">
+                <li class="d-flex flex-column me-4">
+                    <span class="fw-bolder">Start Date:</span>
+                    <span>1-11-2021</span>
+                </li>
+                <li class="d-flex flex-column">
+                    <span class="fw-bolder">End Date:</span>
+                    <span>--------------</span>
+                </li>
+            </ul>
+            <hr>
+            <div class="d-flex flex-row justify-content-between mb-3">
+                <p class="card-text fw-bolder mb-0">Progress: 22%</p>
+                <p class="days-left days-left-stopped badge mb-0"> 
+                    <fa-icon [icon]="faHandPaper"></fa-icon>
+                    <span class="ms-2">Stopped at 25 days</span>
+                </p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-stopped" style="width:22%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

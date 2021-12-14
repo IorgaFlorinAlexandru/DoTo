@@ -1,0 +1,32 @@
+<div class="task-category-container pb-3 pt-3 pe-3 ps-3 mt-5">
+    <div class="task-category-header d-flex flex-row align-items-center">
+        <div class="shadow-sm d-flex align-items-center justify-content-center project-icon" style="background-color:#ffe28c;">
+            <fa-icon [icon]="faTerminal"></fa-icon>
+        </div>
+        <h3 class="fw-bold ms-3 mb-0">{{category.Title}}</h3>
+    </div>
+    <hr>
+    <div class="tasksContainer d-flex flex-row justify-content-between mt-4">
+        <div class="inProgress">
+            <h5 class="fw-bold mb-4">In Progress</h5>
+            <div *ngFor="let item of category.InProgressList">
+                <app-task [task]="item"></app-task>
+            </div>
+           <button class="btn btn-primary mt-3" (click)="createTask()" style="font-size:13px;"><fa-icon [icon]="faPlus"></fa-icon></button>
+        </div>
+        <div class="tasks-line"></div>
+        <div class="needsReview">
+            <h5 class="fw-bold mb-4">Needs Review</h5>
+            <div *ngFor="let item of category.InReviewList">
+                <app-task [task]="item"></app-task>
+            </div>
+       </div>
+        <div class="tasks-line"></div>
+        <div class="Completed">
+            <h5 class="fw-bolder mb-4">Completed</h5>
+            <div *ngFor="let item of category.CompletedList">
+                <app-task [task]="item"></app-task>
+            </div>
+        </div>
+    </div>
+</div>

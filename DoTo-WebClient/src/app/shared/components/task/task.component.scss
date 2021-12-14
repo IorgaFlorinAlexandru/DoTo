@@ -1,0 +1,51 @@
+.card-title{
+    width: auto;
+    border-radius: 5px;
+    text-align: center;
+    font-weight:900;
+    margin-bottom: 0;
+    font-size:17px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-title:hover{
+    text-decoration: underline;
+}
+
+.card-text{
+    width:85%;
+}
+
+.taskCard{
+    border-left:5px solid ;
+    width: 500px;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+}
+
+.low-priority{
+    border-left-color: #335eea;
+}
+
+.medium-priority{
+    border-left-color: #ffc107;
+}
+
+.high-priority{
+    border-left-color: #ec5552;
+}
+
+.completed{
+    border-left-color: #28a745 !important;
+}
+
+.task-info{
+   color:#515151;
+}
+
+.task-user p{
+   margin: 0;
+}
+
+

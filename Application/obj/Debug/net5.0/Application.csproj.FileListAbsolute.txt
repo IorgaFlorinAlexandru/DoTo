@@ -1,0 +1,15 @@
+C:\NET Workspace\ASP .NET\DoTo\Application\bin\Debug\net5.0\Application.deps.json
+C:\NET Workspace\ASP .NET\DoTo\Application\bin\Debug\net5.0\Application.dll
+C:\NET Workspace\ASP .NET\DoTo\Application\bin\Debug\net5.0\ref\Application.dll
+C:\NET Workspace\ASP .NET\DoTo\Application\bin\Debug\net5.0\Application.pdb
+C:\NET Workspace\ASP .NET\DoTo\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+C:\NET Workspace\ASP .NET\DoTo\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\NET Workspace\ASP .NET\DoTo\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+C:\NET Workspace\ASP .NET\DoTo\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+C:\NET Workspace\ASP .NET\DoTo\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+C:\NET Workspace\ASP .NET\DoTo\Application\obj\Debug\net5.0\Application.dll
+C:\NET Workspace\ASP .NET\DoTo\Application\obj\Debug\net5.0\ref\Application.dll
+C:\NET Workspace\ASP .NET\DoTo\Application\obj\Debug\net5.0\Application.pdb
+C:\NET Workspace\ASP .NET\DoTo\Application\bin\Debug\net5.0\Domain.dll
+C:\NET Workspace\ASP .NET\DoTo\Application\bin\Debug\net5.0\Domain.pdb
+C:\NET Workspace\ASP .NET\DoTo\Application\obj\Debug\net5.0\Application.csproj.CopyComplete

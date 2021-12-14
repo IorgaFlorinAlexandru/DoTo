@@ -1,0 +1,28 @@
+.card{
+    height: 315px;
+}
+
+.activity-list{
+    list-style: none;
+    padding: 0;
+    scrollbar-width: thin;
+}
+
+
+
+.activity-title{
+    background-color:#a0d9b4;
+    color: #212529;
+    border-radius: 5px;
+}
+
+.activity-date-info{
+    font-size: 12px;
+    color: #b9babb;
+    font-weight: 600;
+}
+
+.activity-dot{
+    width: 20px;
+    height: 20px;
+}

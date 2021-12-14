@@ -1,0 +1,48 @@
+.authContainer{
+    background-color: #fff;
+    width:30rem;
+    height:max-content;
+    border-radius:5px;
+}
+
+.authFormHeader{
+    background-color:#1a2942;
+    color:#fff;
+    z-index:-1;
+    border-radius:5px 5px 0px 0px;
+}
+
+.authFormBody{
+    padding:2rem;
+}
+
+.authBtn{
+    background-color: #1a2942;
+    border-color: #1a2942;
+    color: #fff;
+}
+
+.authBtn:focus{
+    border-color: #1a2942;
+    box-shadow: red;
+}
+
+.form-check-label, .form-label{
+    font-weight: 700;
+    font-style: italic;
+    color:#797979;
+    font-size: 14px;
+}
+
+.form-control:focus{
+    border-color:#3bc0c3;
+}
+
+.form-check-input:checked {
+    background-color: #3bc0c3;
+    border-color: #3bc0c3;
+}
+
+.link-secondary{
+    cursor: pointer;
+}

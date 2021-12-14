@@ -1,0 +1,24 @@
+.card{
+    height: 315px;
+}
+
+.notes-list li{
+    font-size: 15px;
+}
+
+.notes-list{
+    list-style: none;
+
+}
+
+.notes-list li::before {
+    content: "\2022";
+    display: inline-block;
+    color: #fb3e2a;
+    margin-left: -1.5em;
+}
+
+/*.notes-list::-webkit-scrollbar {
+    background-color: red;
+  width: 1px;
+}Chrome */

@@ -1,0 +1,11 @@
+@import "../styles.scss";
+body{
+    background-color: $secondary-background-color;
+}
+.mainContainer{
+    padding:0;
+    margin:0;
+    width:100%;
+    background-color: $secondary-background-color;
+}
+

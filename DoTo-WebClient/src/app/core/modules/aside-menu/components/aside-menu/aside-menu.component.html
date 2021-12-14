@@ -1,0 +1,34 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 sticky-top sidebarMenu" [class.asideMenuResized]='resized'>
+    <a class="d-flex align-items-center mb-3 justify-content-center text-white text-decoration-none asideHeader">
+      <fa-icon [icon]="faCode" class="appIcon" [class.iconResized]='resized'></fa-icon>
+      <span class="fs-4 text-center appTitle" [class.disableAside]='resized'>DoTo</span>
+    </a>
+    <p class="asideParagraph text-uppercase" [class.disableAside]='resized' >Navigation</p>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a class="nav-link asideLink" [class.linkResized]='resized' routerLinkActive="asideLinkActive" routerLink="/home">
+            <fa-icon [icon]="faHome"></fa-icon>
+            <span style="margin-left:10px;" [class.disableAside]='resized'>Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link asideLink" [class.linkResized]='resized' routerLinkActive="asideLinkActive" routerLink="/tasks">
+            <fa-icon [icon]="faTasks"></fa-icon>
+            <span style="margin-left:10px;" [class.disableAside]='resized'>Tasks</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link asideLink" [class.linkResized]='resized' routerLinkActive="asideLinkActive" routerLink="/projects">
+            <fa-icon [icon]="faFolder"></fa-icon>
+            <span style="margin-left:10px;" [class.disableAside]='resized'>Projects</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link asideLink" [class.linkResized]='resized' routerLinkActive="asideLinkActive" routerLink="/resources">
+            <fa-icon [icon]="faFileAlt"></fa-icon>
+            <span style="margin-left:10px;" [class.disableAside]='resized'>Resources</span>
+        </a>
+      </li>
+     </ul>
+    <hr>
+</div>

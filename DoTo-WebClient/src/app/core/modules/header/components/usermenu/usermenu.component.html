@@ -1,0 +1,27 @@
+<div class="card" style="width:12rem;">
+    <div class="card-header">
+            <div class="card-title d-flex flex-row" style="margin:0;">
+                <span class="link-secondary">Welcome!</span> 
+            </div>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <a class="link-secondary userLink" (click)="goToProfile()" >
+                <span><fa-icon [icon]="faUser"></fa-icon></span>
+                <span style="margin-left:10px;">Profile</span>
+            </a> 
+        </li>
+        <li class="list-group-item">
+            <a class="link-secondary userLink" href="#">
+                <span><fa-icon [icon]="faCog"></fa-icon></span>
+                <span style="margin-left:10px;">Settings</span>
+            </a> 
+        </li>
+    </ul>
+    <div class="card-footer">
+        <a class="link-secondary userLink" href="#">
+            <span><fa-icon [icon]="faDoorOpen"></fa-icon></span>
+            <span style="margin-left:10px;">Logout</span>
+        </a>
+    </div>
+</div>

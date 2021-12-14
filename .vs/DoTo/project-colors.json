@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "eb26af46-6136-476e-86b9-ad75f2dbe380": {
+      "ProjectGuid": "eb26af46-6136-476e-86b9-ad75f2dbe380",
+      "DisplayName": "WebApi",
+      "ColorIndex": 0
+    },
+    "3f3c6e39-0f00-494e-bba5-6e2fb7a207da": {
+      "ProjectGuid": "3f3c6e39-0f00-494e-bba5-6e2fb7a207da",
+      "DisplayName": "Application",
+      "ColorIndex": 1
+    },
+    "80c6951b-f350-4689-8fdc-82cc10d07ee7": {
+      "ProjectGuid": "80c6951b-f350-4689-8fdc-82cc10d07ee7",
+      "DisplayName": "Domain",
+      "ColorIndex": 2
+    },
+    "8d796730-372a-4b82-aca5-0dfa43b7d0b5": {
+      "ProjectGuid": "8d796730-372a-4b82-aca5-0dfa43b7d0b5",
+      "DisplayName": "Infrastructure",
+      "ColorIndex": 3
+    },
+    "3ab5d1b9-be7a-48af-b82d-28b673bcccdf": {
+      "ProjectGuid": "3ab5d1b9-be7a-48af-b82d-28b673bcccdf",
+      "DisplayName": "ClassLibrary1",
+      "ColorIndex": 4
+    },
+    "4dbde38b-f40e-47c0-9579-7742bd93fe57": {
+      "ProjectGuid": "4dbde38b-f40e-47c0-9579-7742bd93fe57",
+      "DisplayName": "Application",
+      "ColorIndex": 5
+    },
+    "84738955-613c-480e-8ab2-9e8009c00ef4": {
+      "ProjectGuid": "84738955-613c-480e-8ab2-9e8009c00ef4",
+      "DisplayName": "Domain",
+      "ColorIndex": 6
+    },
+    "d469f71d-cdc2-4d6e-873d-b6954fa1a6eb": {
+      "ProjectGuid": "d469f71d-cdc2-4d6e-873d-b6954fa1a6eb",
+      "DisplayName": "Infrastructure",
+      "ColorIndex": 7
+    },
+    "3bf4dfb9-773b-4d5e-a644-65e58c2f4e99": {
+      "ProjectGuid": "3bf4dfb9-773b-4d5e-a644-65e58c2f4e99",
+      "DisplayName": "Web",
+      "ColorIndex": 8
+    },
+    "ff9f63a4-0797-47d9-8dac-00ee37db77d7": {
+      "ProjectGuid": "ff9f63a4-0797-47d9-8dac-00ee37db77d7",
+      "DisplayName": "Web",
+      "ColorIndex": 9
+    },
+    "933625fa-d05d-49be-b4b5-f176cfe431ba": {
+      "ProjectGuid": "933625fa-d05d-49be-b4b5-f176cfe431ba",
+      "DisplayName": "Infrastructure",
+      "ColorIndex": 10
+    },
+    "c5961871-2073-4e3f-a36e-b254a1f6ba31": {
+      "ProjectGuid": "c5961871-2073-4e3f-a36e-b254a1f6ba31",
+      "DisplayName": "Application",
+      "ColorIndex": 11
+    },
+    "2979245d-58ad-4caf-9fa8-4d6b69ffac51": {
+      "ProjectGuid": "2979245d-58ad-4caf-9fa8-4d6b69ffac51",
+      "DisplayName": "Domain",
+      "ColorIndex": 12
+    },
+    "fa1c5769-8827-4823-a332-ff77a2e20c58": {
+      "ProjectGuid": "fa1c5769-8827-4823-a332-ff77a2e20c58",
+      "DisplayName": "Infrastructure",
+      "ColorIndex": 13
+    },
+    "9a073e59-4d06-4738-aace-d05aa5402f35": {
+      "ProjectGuid": "9a073e59-4d06-4738-aace-d05aa5402f35",
+      "DisplayName": "WebApplication1",
+      "ColorIndex": 14
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 15
+}

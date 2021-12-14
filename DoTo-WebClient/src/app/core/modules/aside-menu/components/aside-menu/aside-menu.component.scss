@@ -1,0 +1,66 @@
+.asideHeader{
+    font-size:2rem;
+}
+
+.appIcon{
+    margin-left:-1rem;
+}
+
+.appTitle{
+    margin-left:10px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.appTitle:nth-child(1){
+    color:black;
+}
+
+.sidebarMenu{
+    width:250px;
+    height:100vh;
+    transition:0.3s;
+    background-color: #1a2942;
+}
+
+.asideLink{
+    color: #70809a;
+}
+
+.asideLinkActive{
+    color: #3bc0c3;
+    background-color: #162339;
+}
+
+.asideLink:hover{
+    color: #3bc0c3;
+}
+
+.asideParagraph{
+    color: #70809a;
+    font-size:0.8rem;
+    font-weight:900;
+    margin-top:0.5rem;
+    margin-bottom:0;
+    padding:0.5rem 1rem;
+}
+
+/*Resized Sidebar classes*/
+.disableAside{
+    display:none;
+}
+
+.iconResized{
+    margin-left:0;
+    margin-bottom:1rem;
+}
+
+.asideMenuResized{
+    width:100px;
+    transition: 0.3s;
+}
+
+.linkResized{
+    text-align:center;
+    font-size:1.3rem;
+}

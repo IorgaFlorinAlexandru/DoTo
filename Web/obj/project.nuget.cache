@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "E1lZ7+AcKYUqT0M0qmpRWgVQjzkBYwCluZmvN3ISvI+p2dxAgvYBE8ZKw02VRLFJ91znjMZj+oO9iEzz+ZshgQ==",
+  "dgSpecHash": "uUp80LvclpoL09aToOgD3vT19U1SxH77xIcSJKpQccdbmasq9n0XZ+C9J2vZXp3MP4Tiz24Wo/cEb8eU5+COAQ==",
   "success": true,
   "projectFilePath": "C:\\NET Workspace\\ASP .NET\\DoTo\\Web\\Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aleal\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\aleal\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\aleal\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\aleal\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\aleal\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

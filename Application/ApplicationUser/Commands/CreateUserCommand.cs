@@ -15,6 +15,7 @@ namespace Application.ApplicationUser.Commands
         public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Email { get; set; }
     }
 
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, bool>
@@ -31,7 +32,8 @@ namespace Application.ApplicationUser.Commands
             {
                 Id = request.Id,
                 FirstName = request.FirstName,
-                LastName = request.LastName
+                LastName = request.LastName,
+                Email = request.Email,
             };
 
             _context.ApplicationUsers.Add(user);

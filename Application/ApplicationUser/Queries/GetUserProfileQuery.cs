@@ -1,6 +1,8 @@
 ﻿using Application.Common.Interfaces;
+using Domain.DTO.AuthDTOs;
 using Domain.Entities.AuthEntities;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,18 +12,36 @@ using System.Threading.Tasks;
 
 namespace Application.ApplicationUser.Queries
 {
-    public class GetUserProfileQuery: IRequest<User>
+    public class GetUserProfileQuery: IRequest<UserProfile>
     {
         public string Id { get; set; }
     }
 
-    public class GetUserProfileQueryHandler: IRequestHandler<GetUserProfileQuery, User>
+    public class GetUserProfileQueryHandler: IRequestHandler<GetUserProfileQuery, UserProfile>
     {
         private readonly IApplicationDbContext _context;
 
-        public Task<User> Handle(GetUserProfileQuery request, CancellationToken cancellationToken)
+        public GetUserProfileQueryHandler(IApplicationDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+
+        public async Task<UserProfile> Handle(GetUserProfileQuery request, CancellationToken cancellationToken)
+        {
+            var user = await _context.ApplicationUsers.Where(x => x.Id == request.Id).FirstOrDefaultAsync();
+            var userProjects = await _context.Projects.Where(x => x.UserId == request.Id).ToListAsync();
+
+
+            var profile = new UserProfile
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                Projects = new ListOfProjects(userProjects)
+            };
+
+
+            return profile;
         }
     }
 }

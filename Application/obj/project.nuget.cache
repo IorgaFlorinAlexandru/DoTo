@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "30i612gY5UejZ22HGa7U9oHdJosy4QY+GxZ2PmIH1cwwYzXs4zCEPlDwvh5BLxphOLbgn6M0d8TXwhiRXO9PkQ==",
+  "dgSpecHash": "sKPwGg/UnJaUs+GC3EPIFFyOekGYGt+3sV5iEbXQdNYiakkj789I7mdkh+25EU5cICNqU+Sx6XYy8jQ2OSY9Pg==",
   "success": true,
   "projectFilePath": "C:\\NET Workspace\\ASP .NET\\DoTo\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aleal\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\aleal\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\aleal\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\aleal\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\aleal\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.12\\microsoft.entityframeworkcore.5.0.12.nupkg.sha512",

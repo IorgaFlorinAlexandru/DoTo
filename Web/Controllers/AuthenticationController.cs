@@ -34,6 +34,7 @@ namespace Web.Controllers
                         Id = result.AccountId,
                         FirstName = model.FirstName,
                         LastName = model.LastName, 
+                        Email = model.Email,
                     };
 
                     await Mediator.Send(command);

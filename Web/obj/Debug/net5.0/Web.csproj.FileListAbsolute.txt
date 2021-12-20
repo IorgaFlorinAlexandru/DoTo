@@ -60,3 +60,5 @@ C:\NET Workspace\ASP .NET\DoTo\Web\bin\Debug\net5.0\Domain.dll
 C:\NET Workspace\ASP .NET\DoTo\Web\bin\Debug\net5.0\Domain.pdb
 C:\NET Workspace\ASP .NET\DoTo\Web\bin\Debug\net5.0\MediatR.dll
 C:\NET Workspace\ASP .NET\DoTo\Web\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\NET Workspace\ASP .NET\DoTo\Web\bin\Debug\net5.0\FluentValidation.dll
+C:\NET Workspace\ASP .NET\DoTo\Web\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll

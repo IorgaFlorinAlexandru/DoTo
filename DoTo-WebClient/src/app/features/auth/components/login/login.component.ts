@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoginModel } from 'src/app/core/models/auth/login-model';
+import { AuthService } from 'src/app/core/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -9,22 +11,31 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder : FormBuilder, private router: Router) { }
+  constructor(private formBuilder : FormBuilder, private router: Router,private authService: AuthService) { }
 
   ngOnInit(): void {
   }
 
 
   loginGroup: FormGroup=this.formBuilder.group({
-    loginEmail: ["",Validators.required],
+    loginUsername: ["",Validators.required],
     loginPassword: ["",Validators.required],
     loginRemember: false 
   });
 
   login(){
-      console.log(this.loginGroup.value.loginEmail);
-      console.log(this.loginGroup.value.loginPassword);
-      console.log(this.loginGroup.value.loginRemember);
+    const loginModel =<LoginModel>{
+      userName: this.loginGroup.value.loginUsername,
+      password: this.loginGroup.value.loginPassword
+    }
+    this.authService.login(loginModel).subscribe(
+      (resp) => {
+        console.log(resp);
+      },
+      (error) => {
+        console.log(error.error);
+      }
+    );
   }
 
   goToRegister(){

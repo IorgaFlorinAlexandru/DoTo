@@ -10,7 +10,4 @@ export class CoreService {
 
   constructor() { }
 
-  resizeAsideMenu(){
-      this.asideMenuResized.emit(true);
-  }
 }

@@ -5,6 +5,8 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faSortDown } from '@fortawesome/free-solid-svg-icons';
+import { User } from 'src/app/core/models/auth/user';
+import { AuthService } from 'src/app/core/services/auth.service';
 import { CoreService } from '../../../../services/core.service';
 
 @Component({
@@ -14,9 +16,19 @@ import { CoreService } from '../../../../services/core.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private coreService : CoreService) { }
+  constructor(private coreService : CoreService,private authService: AuthService) { }
+
+  userAuthenticated = false;
+  user: User | undefined = undefined;
+
 
   ngOnInit(): void {
+    this.authService.userAuthenticated.subscribe(
+      (emit) => {
+        this.userAuthenticated = emit;
+        this.user = this.authService.user;
+      }
+    )
   }
 
   faBars = faBars;
@@ -27,7 +39,7 @@ export class HeaderComponent implements OnInit {
   faSortDown = faSortDown;
 
   resizeAsideMenu(){
-      this.coreService.resizeAsideMenu();
+      this.coreService.asideMenuResized.emit(true);
   }
 
 }

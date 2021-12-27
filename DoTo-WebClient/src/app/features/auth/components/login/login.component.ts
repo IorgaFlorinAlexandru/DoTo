@@ -29,8 +29,9 @@ export class LoginComponent implements OnInit {
       password: this.loginGroup.value.loginPassword
     }
     this.authService.login(loginModel).subscribe(
-      (resp) => {
-        console.log(resp);
+      () => {
+        const url = this.authService.lastRoute != undefined ? this.authService.lastRoute : '/home';
+        this.router.navigateByUrl(url);
       },
       (error) => {
         console.log(error.error);

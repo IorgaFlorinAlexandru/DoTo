@@ -7,6 +7,7 @@ import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from 'src/app/core/services/auth.service';
 import { CoreService } from '../../../../services/core.service';
 
 
@@ -18,15 +19,21 @@ import { CoreService } from '../../../../services/core.service';
 })
 export class AsideMenuComponent implements OnInit {
 
-  constructor(private coreService : CoreService) { }
+  constructor(private coreService : CoreService,private authService: AuthService) { }
 
   resized = false;
+  user = false;
 
   ngOnInit(): void {
       this.coreService.asideMenuResized.subscribe(
           () => {
               this.resized = !this.resized;
           });
+      this.authService.userAuthenticated.subscribe(
+        (emit) => {
+          this.user = emit;
+        }
+      );
   }
 
   faBell = faBell;

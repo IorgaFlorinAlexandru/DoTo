@@ -1,4 +1,4 @@
-<header class="sticky-top">
+<header *ngIf='userAuthenticated' class="sticky-top">
   <nav class="navbar shadow-sm pt-3 pb-3">
       <div class="container-fluid">
           <div class="d-flex flex-row">
@@ -36,7 +36,7 @@
                 <div class="d-flex align-items-center" ngbDropdown>
                     <button class="d-flex align-items-center ms-3 btn btn-light" id="dropUserMenu" ngbDropdownToggle>
                         <img src="../../../assets/images/derpcat.jpg" class="rounded-circle" style="height:2.5rem">
-                        <p class="ms-2 userName">Alexandru</p>
+                        <p class="ms-2 userName">{{user?.firstName}} {{user?.lastName}}</p>
                         <span class="ms-2 mb-1"><fa-icon [icon]="faSortDown"></fa-icon></span>
                     </button>
                     <div ngbDropdownMenu aria-labelledby="dropUserMenu" class="dropdownMenu" style="margin-left:-1rem;margin-top:15.5rem;">

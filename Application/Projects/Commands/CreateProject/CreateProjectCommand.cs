@@ -16,6 +16,7 @@ namespace Application.Projects.Commands.CreateProject
         public string Description { get; set; }
         public string Version { get; set; }
         public DateTime CreatedDate { get; set; }
+        public DateTime EndDate { get; set; }
         public string UserId { get; set; }
     }
 
@@ -35,7 +36,9 @@ namespace Application.Projects.Commands.CreateProject
                 Name = request.Name,
                 Description = request.Description,
                 Version = request.Version,
+                Status = "In progress",
                 CreatedDate = request.CreatedDate,
+                EndDate = request.EndDate,
                 UserId = request.UserId
             };
 

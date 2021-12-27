@@ -1,4 +1,4 @@
-<div class="d-flex flex-column flex-shrink-0 p-3 sticky-top sidebarMenu" [class.asideMenuResized]='resized'>
+<div *ngIf="user" class="d-flex flex-column flex-shrink-0 p-3 sticky-top sidebarMenu" [class.asideMenuResized]='resized'>
     <a class="d-flex align-items-center mb-3 justify-content-center text-white text-decoration-none asideHeader">
       <fa-icon [icon]="faCode" class="appIcon" [class.iconResized]='resized'></fa-icon>
       <span class="fs-4 text-center appTitle" [class.disableAside]='resized'>DoTo</span>

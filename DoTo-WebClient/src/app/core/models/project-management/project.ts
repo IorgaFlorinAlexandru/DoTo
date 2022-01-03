@@ -6,4 +6,5 @@ export class Project {
     status: string = "";
     createdDate: string = "";
     endDate: string = "";
+    days: number = 0;
 }

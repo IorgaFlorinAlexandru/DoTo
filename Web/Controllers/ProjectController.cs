@@ -1,5 +1,6 @@
 ﻿using Application.Projects.Commands.CreateProject;
 using Application.Projects.Queries;
+using Domain.DTO.ProjectDTOs;
 using Domain.Entities.ProductivityEntities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -25,6 +26,10 @@ namespace Web.Controllers
         [HttpGet("project-categories/{id}")]
         public async Task<List<Category>> GetProjectTaskCategories(int id)
             => await Mediator.Send(new GetProjectTaskCategoriesQuery { Id = id });
+
+        [HttpGet("getUserProjects")]
+        public async Task<ListOfProjects> GetUserProjects()
+            => await Mediator.Send(new GetUserProjectsQuery { Id = GetUserId() });
 
         protected async Task<int> Create(CreateProjectCommand command)
         {

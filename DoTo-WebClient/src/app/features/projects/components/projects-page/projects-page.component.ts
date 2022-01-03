@@ -5,6 +5,8 @@ import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
 import { faHandPaper } from '@fortawesome/free-solid-svg-icons';
 import { faTerminal } from '@fortawesome/free-solid-svg-icons';
+import { ProjectList } from 'src/app/core/models/project-management/project-list';
+import { ProjectService } from 'src/app/core/services/project-management-services/project.service';
 
 @Component({
   selector: 'app-projects-page',
@@ -13,10 +15,25 @@ import { faTerminal } from '@fortawesome/free-solid-svg-icons';
 })
 export class ProjectsPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private projectService: ProjectService) { }
+
+  projects : ProjectList | undefined;
 
   ngOnInit(): void {
+    this.projectService.getUserProjects().subscribe(
+      (response: ProjectList) => {
+        this.projects = response;
+      },
+      (error) => {
+        console.log(error);
+      }
+    )
   }
+
+  getProjectDetails(id: number){
+    console.log(id);
+  }
+  
   faPalette = faPalette;
   faFlag = faFlag;
   faMobileAlt = faMobileAlt;

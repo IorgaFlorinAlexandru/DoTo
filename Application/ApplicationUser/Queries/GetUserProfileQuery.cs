@@ -1,5 +1,6 @@
 ﻿using Application.Common.Interfaces;
 using Domain.DTO.AuthDTOs;
+using Domain.DTO.ProjectDTOs;
 using Domain.Entities.AuthEntities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;

@@ -29,6 +29,10 @@ namespace Domain.DTO.ProjectDTOs
         public string Status { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime EndDate { get; set; }
+        public string ColorTheme { get; set; }
+        public string ProjectIcon { get; set; }
+
+        //DTO Data
         public int Days { get; set; }
 
         public UserProfileProject(Project project)
@@ -40,6 +44,8 @@ namespace Domain.DTO.ProjectDTOs
             Status = project.Status;
             CreatedDate = project.CreatedDate;
             EndDate = project.EndDate;
+            ColorTheme = project.ColorTheme;
+            ProjectIcon = project.ProjectIcon;
             Days = (int)(EndDate - DateTime.Now).TotalDays;
         }
     }

@@ -1,8 +1,15 @@
 <p> </p>
+<div class="page-header d-flex flex-row align-items-center justify-content-between">
+    <h2 class="fw-bolder">Projects</h2>
+    <button class="btn btn-primary" (click)="open(content)">Create new project</button>
+</div>
+<hr>
+
 <div class="d-flex flex-row justify-content-evenly flex-wrap mb-3">
+
     <div class="card project-card" *ngFor="let item of projects?.userProjects" (click)="getProjectDetails(item.id)">
-        <div class="shadow-sm d-flex align-items-center justify-content-center project-icon" style="background-color: #a8d7e0;">
-            <fa-icon [icon]="faMobileAlt"></fa-icon>
+        <div class="shadow-sm d-flex align-items-center justify-content-center project-icon" [style.background-color]="item.colorTheme">
+            <fa-icon [icon]="getIcon(item.projectIcon)"></fa-icon>
         </div>
         <div class="card-body ">
             <div class="project-header mb-2 d-flex flex-row justify-content-between">
@@ -36,4 +43,24 @@
     </div>
 
 </div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Create Project</h4>
+      <button type="button" class="btn btn-light" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <fa-icon [icon]="faTimes"></fa-icon>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="dateOfBirth">Project name</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.dismiss('Canceled')">Cancel</button>
+        <button type="button" class="btn btn-success" (click)="modal.close('Save click')">Save</button>
+    </div>
+</ng-template>
 

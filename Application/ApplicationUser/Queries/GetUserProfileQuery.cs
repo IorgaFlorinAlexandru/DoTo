@@ -30,15 +30,12 @@ namespace Application.ApplicationUser.Queries
         public async Task<UserProfile> Handle(GetUserProfileQuery request, CancellationToken cancellationToken)
         {
             var user = await _context.ApplicationUsers.Where(x => x.Id == request.Id).FirstOrDefaultAsync();
-            var userProjects = await _context.Projects.Where(x => x.UserId == request.Id).ToListAsync();
-
 
             var profile = new UserProfile
             {
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Email = user.Email,
-                Projects = new ListOfProjects(userProjects)
             };
 
 

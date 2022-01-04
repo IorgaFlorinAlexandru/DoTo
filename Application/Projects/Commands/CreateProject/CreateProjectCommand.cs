@@ -17,6 +17,8 @@ namespace Application.Projects.Commands.CreateProject
         public string Version { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime EndDate { get; set; }
+        public string ColorTheme { get; set; }
+        public string ProjectIcon { get; set; }
         public string UserId { get; set; }
     }
 
@@ -39,6 +41,8 @@ namespace Application.Projects.Commands.CreateProject
                 Status = "In progress",
                 CreatedDate = request.CreatedDate,
                 EndDate = request.EndDate,
+                ColorTheme = request.ColorTheme,
+                ProjectIcon = request.ProjectIcon,
                 UserId = request.UserId
             };
 

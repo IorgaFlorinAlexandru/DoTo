@@ -7,4 +7,6 @@ export class Project {
     createdDate: string = "";
     endDate: string = "";
     days: number = 0;
+    projectIcon: string = "";
+    colorTheme: string = "";
 }

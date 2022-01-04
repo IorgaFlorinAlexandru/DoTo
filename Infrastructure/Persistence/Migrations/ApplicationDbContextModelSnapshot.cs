@@ -68,6 +68,9 @@ namespace Infrastructure.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+                    b.Property<string>("ColorTheme")
+                        .HasColumnType("text");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp without time zone");
 
@@ -78,6 +81,9 @@ namespace Infrastructure.Migrations
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ProjectIcon")
                         .HasColumnType("text");
 
                     b.Property<string>("Status")
